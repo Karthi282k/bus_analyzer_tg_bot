@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+echo "PHP Version"
+echo php -v
 echo "Running composer"
 composer self-update 2.1.14
 composer dump-autoload
