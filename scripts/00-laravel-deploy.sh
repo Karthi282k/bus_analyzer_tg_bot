@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 echo "Running composer"
-composer global require hirak/prestissimo
+composer self-update 2.1.14
 composer dump-autoload
+composer global require hirak/prestissimo
 composer install --no-dev --working-dir=/var/www/html
 
 echo "generating application key..."
