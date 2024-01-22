@@ -2,9 +2,9 @@
 echo "PHP Version"
 echo php -v
 echo "Running composer"
-composer self-update 2.1.14
 php artisan clear-compiled
-composer dump-autoload
+composer self-update 2.1.14
+composer dump-autoload -o
 composer global require hirak/prestissimo
 composer install --no-dev --working-dir=/var/www/html
 composer update --no-scripts
