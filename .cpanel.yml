@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/testing.karthi.ecou.in
+    - /bin/cp -R images $DEPLOYPATH
